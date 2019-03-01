@@ -12,7 +12,7 @@ Simple &amp; Short landing page for description yourself :)
 ![alt text](https://github.com/Artindev/SLanding/blob/master/image/screenLand.PNG "Desktop Preview")
 <br><br><br>
 ## Mobile Preview
-<center>![alt text](https://github.com/Artindev/SLanding/blob/master/image/screenMobile.PNG "Mobile Preview")</center>
+![alt text](https://github.com/Artindev/SLanding/blob/master/image/screenMobile.PNG "Mobile Preview")
 
 <br><br><br><br>
 ***
