@@ -1,0 +1,144 @@
+// Adding Font 
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+// Variables
+$padding:15px;
+$radius:10px;
+$deskSize:840px;
+// Object Color
+$color : (
+    primary:#3867d6,
+    primary-lighten:lighten(#3867d6,40%),
+    primary-dark:darken(#3867d6,40%),
+    accent:#fcee92
+);
+// Responsive Mixin
+@mixin desktop {
+    @media (min-width:#{$deskSize}){
+        @content;
+    }
+    
+}
+// Color Function
+@function color($name-color){
+    @return map-get($color, $name-color );
+}
+// Setup
+body , html {
+    height: 100%;
+}
+// Desing Body and Header
+body{
+    margin:0;
+    font-family: 'Montserrat';
+   
+    #bg{
+        background-color:color(primary);
+        height:100%;
+        width:100%;
+        clip-path: polygon(100% 0, 100% 74%, 51% 100%, 0 100%, 0 0);
+        position: absolute;
+        z-index:-1;
+        @include desktop{
+            clip-path: polygon(0 0, 85% 0, 52% 100%, 0% 100%);
+        }
+    }
+    header a{
+        display: block;
+        color:#FFF;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: $padding;
+        font-size:1.2em;
+
+    }
+}
+// FAQ Section Design
+main{
+    @include desktop{
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: 
+            "primary card";
+    }
+    section#card{
+        background-color: #FFF;
+        border-radius: $radius;
+        width:80%;
+        margin:1em auto;
+        padding:20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        ul{
+            margin:0px;padding:0px;
+            list-style-type: none;
+            li{
+                margin-top: 10px;
+                span{
+                    position: absolute;
+                    height:30px;width:30px;
+                    background-color:color(primary-lighten);
+                    border-radius: 50%;
+                    margin-right: 10px;
+
+                }
+                strong{
+                    display: inline-block;
+                    margin-left: max(40px);
+                    margin-top:10px;
+                    font-weight: 600;
+                }
+            }
+        }
+        @include desktop{
+            grid-area: card;
+            height: fit-content;
+            margin:2em 0em 0em 0em;
+            align-self: center;
+        }
+    }
+    section#primary{
+        padding: $padding;
+        color:#fff;
+        text-align: center;
+        @include desktop{
+            grid-area: primary;
+            text-align: left;
+            margin:4em 0 0 4em;
+        }
+
+        h1{
+            display: block;
+            font-size: 3em;
+            line-height: 1;
+            @include desktop{
+                font-size: 4em;
+                line-height: .9;
+                width:30%;
+            }
+
+        }
+        p{
+            font-size: 1.4em;
+            span{
+                color:#eb3b5a;
+            }
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color:color(primary-dark);
+            background-color: color(accent);
+            padding: $padding;
+            border-radius: $radius;
+            margin:3.125em auto 0 auto;
+            display: block;
+            text-align: center;
+            @include desktop{
+                display: inline-block;
+                padding: $padding $padding * 4;
+                position: absolute;
+                left:150px;
+                width:30%;
+            }
+        }
+    }
+}
