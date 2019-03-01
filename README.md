@@ -7,9 +7,8 @@ Simple &amp; Short landing page for description yourself :)
 - Vscode 😃💻
 ---
 # This is My SimpleLandingPage
-<center>
-## Desktop Preview
 
+<center>## Desktop Preview
 ![alt text](https://github.com/Artindev/SLanding/blob/master/image/screenLand.PNG "Desktop Preview")
 <br><br><br>
 ## Mobile Preview
