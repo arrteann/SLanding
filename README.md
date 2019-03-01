@@ -7,13 +7,13 @@ Simple &amp; Short landing page for description yourself :)
 - Vscode 😃💻
 ---
 # This is My SimpleLandingPage
-<center>
+
 ## Desktop Preview
 ![alt text](https://github.com/Artindev/SLanding/blob/master/image/screenLand.PNG "Desktop Preview")
 <br><br><br>
 ## Mobile Preview
 ![alt text](https://github.com/Artindev/SLanding/blob/master/image/screenMobile.PNG "Mobile Preview")
-</center>
+
 <br><br><br><br>
 ***
 # Please Follow Me On My [Instagram](https://instagram.com/artin.dev)
